@@ -1,34 +1,45 @@
-# Grok Local Agent Kit
+# 🦾 Grok Local Agent Kit
 
-[![Stars](https://img.shields.io/github/stars/Tryboy869/local-grok-agent-kit)](https://github.com/Tryboy869/local-grok-agent-kit/stargazers) [![Forks](https://img.shields.io/github/forks/Tryboy869/local-grok-agent-kit)](https://github.com/Tryboy869/local-grok-agent-kit/network) [![License](https://img.shields.io/github/license/Tryboy869/local-grok-agent-kit)](https://github.com/Tryboy869/local-grok-agent-kit/blob/main/LICENSE)
+[![GitHub stars](https://img.shields.io/github/stars/Tryboy869/local-grok-agent-kit.svg?style=social)](https://github.com/Tryboy869/local-grok-agent-kit/stargazers)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org)
 
-**Run powerful autonomous AI agents locally** with Ollama, MCP, and Grok-like capabilities. No cloud dependency. Full control over your data and agents.
+**Empower your local machine with Grok-inspired autonomous AI agents.** Run everything offline with Ollama, support for MCP (Multi-Agent Collaboration Protocol), tool calling, memory, and more.
 
-## Features
-- **Local LLM Support**: Ollama, LM Studio, etc.
-- **MCP Protocol**: Multi-Context Protocol for advanced agent orchestration.
-- **Autonomous Agents**: Planning, tool use, multi-agent collaboration.
-- **Python SDK**: Easy to extend and build custom agents.
-- **CLI Interface**: Quickstart commands.
-- **GitHub Actions CI**: Automated testing.
+## ✨ Features
+- Local-first: No API keys, full privacy
+- Ollama integration out-of-the-box
+- MCP support for advanced orchestration
+- Multi-agent systems
+- Extensible Python framework
+- CLI for quick agent spawning
+- GitHub Actions for CI/CD
 
-## Quickstart
+## 🚀 Quickstart
 
-```bash
-pip install grok-local-agent-kit
-```
+1. Install Ollama: https://ollama.com
+2. `pip install git+https://github.com/Tryboy869/local-grok-agent-kit.git`
+3. Run:
 
 ```python
-from grok_local_agent_kit import Agent
+from grok_local_agent_kit.agent import Agent
 
-agent = Agent(model="llama3")
-response = agent.run("Hello, world!")
-print(response)
+agent = Agent(model="llama3.1")
+result = agent.run("Plan a local AI agent workflow")
+print(result)
 ```
 
-## Roadmap
-- v0.1: Basic agent
-- v1.0: Multi-agent, memory
-- etc.
+## 📖 Documentation
+See [docs/](docs/) (coming soon)
 
-MIT License.
+## 🛣️ Roadmap
+- [x] Basic agent
+- [ ] Full MCP
+- [ ] Memory & RAG
+- [ ] UI Dashboard
+
+## Contributing
+PRs welcome!
+
+## License
+MIT

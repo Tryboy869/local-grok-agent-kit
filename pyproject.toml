@@ -1,0 +1,9 @@
+[project]
+name = "grok-local-agent-kit"
+version = "0.1.0"
+description = "Local Grok Agent Kit"
+requires-python = ">=3.8"
+dependencies = []
+
+[project.scripts]
+grok-agent = "grok_local_agent_kit.cli:main"
